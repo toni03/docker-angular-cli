@@ -6,11 +6,16 @@ Docker images to build an angular cli from node 10 official docker image.
 
 The tags allowed are:
 
+**12**: [12](https://hub.docker.com/layers/toni03/angular-cli/12/images/sha256-df6e89cf52d940c826f327ad7ca4218fd4b9d54c6cac091e696c6cac7bd8752a?context=explore), 
+[12.2](https://hub.docker.com/layers/toni03/angular-cli/12.2/images/sha256-df6e89cf52d940c826f327ad7ca4218fd4b9d54c6cac091e696c6cac7bd8752a?context=explore), 
+[12.2.3](https://hub.docker.com/layers/toni03/angular-cli/12.2.3/images/sha256-df6e89cf52d940c826f327ad7ca4218fd4b9d54c6cac091e696c6cac7bd8752a?context=explore), 
+[12-node-12](https://hub.docker.com/layers/toni03/angular-cli/12-node-12/images/sha256-df6e89cf52d940c826f327ad7ca4218fd4b9d54c6cac091e696c6cac7bd8752a?context=explore), 
+[latest](https://hub.docker.com/layers/toni03/angular-cli/latest/images/sha256-df6e89cf52d940c826f327ad7ca4218fd4b9d54c6cac091e696c6cac7bd8752a?context=explore)
+
 **10**: [10](https://hub.docker.com/layers/toni03/angular-cli/10/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo),
 [10.2](https://hub.docker.com/layers/toni03/angular-cli/10.2/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo), 
 [10.2.0](https://hub.docker.com/layers/toni03/angular-cli/10.2.0/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo), 
-[10-node-10](https://hub.docker.com/layers/toni03/angular-cli/10-node-10/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo), 
-[latest](https://hub.docker.com/layers/toni03/angular-cli/latest/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo)
+[10-node-10](https://hub.docker.com/layers/toni03/angular-cli/10-node-10/images/sha256-66172efa95c6b6d3250b42de7b3ffd0d35bd670a4917e50ca3013da956d7c566?context=repo)
 
 **9**: [9](https://hub.docker.com/layers/toni03/angular-cli/9/images/sha256-fa6f6a08f50b57de594f019bef4ac8acd276fc629b19eed1098a0d77c9b6833b?context=repo), 
 [9.1](https://hub.docker.com/layers/toni03/angular-cli/9.1/images/sha256-fa6f6a08f50b57de594f019bef4ac8acd276fc629b19eed1098a0d77c9b6833b?context=repo), 
@@ -33,6 +38,20 @@ The tags allowed are:
 [6-node-10](https://hub.docker.com/layers/toni03/angular-cli/6-node-10/images/sha256-e5678fbe913d2874032eabc3964cff15977a7c1b6051a9ec62155076d1a023b7?context=repo)
 
 ## Launch commands
+
+### Build and push Angular CLI 12 docker image
+
+```sh
+$> docker build --rm --no-cache -f Dockerfile -t toni03/angular-cli:12 .
+$> docker tag toni03/angular-cli:12 toni03/angular-cli:latest
+$> docker tag toni03/angular-cli:12 toni03/angular-cli:12-node-12
+$> docker tag toni03/angular-cli:12 toni03/angular-cli:12.2
+$> docker tag toni03/angular-cli:12 toni03/angular-cli:12.2.3
+$> docker push toni03/angular-cli:latest
+$> docker push toni03/angular-cli:12
+$> docker push toni03/angular-cli:12-node-12
+$> docker push toni03/angular-cli:12.2
+$> docker push toni03/angular-cli:12.2.3
 
 ### Build and push Angular CLI 10 docker image
 
