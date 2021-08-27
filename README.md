@@ -52,6 +52,7 @@ $> docker push toni03/angular-cli:12
 $> docker push toni03/angular-cli:12-node-12
 $> docker push toni03/angular-cli:12.2
 $> docker push toni03/angular-cli:12.2.3
+```
 
 ### Build and push Angular CLI 10 docker image
 
