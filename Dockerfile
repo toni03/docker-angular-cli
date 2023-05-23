@@ -1,3 +1,3 @@
-FROM node:12
+FROM node:16
 
-RUN npm i -g @angular/cli@12.2.3
+RUN npm i -g @angular/cli@15.2.5
